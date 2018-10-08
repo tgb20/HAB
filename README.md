@@ -13,6 +13,9 @@ sudo reboot
 sudo raspi-config
 Interfacing Options -> Serial -> No -> Yes
 pip install pynmea2
+
+TEMP:
+pip install requests
 ```
 
 ## main.py
