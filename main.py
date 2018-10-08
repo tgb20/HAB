@@ -4,8 +4,8 @@ from grove_i2c_barometic_sensor_BMP180 import BMP085
 from gps import GPS
 from lcd import LCD
 
-tempSensor = 0 # Port A0 is for the Temperature Sensor
-soundSensor = 2 # Port A2 is for the Sound Sensor
+TEMP_SENSOR = 0 # Port A0 is for the Temperature Sensor
+SOUND_SENSOR = 2 # Port A2 is for the Sound Sensor
 bmpSensor = BMP085(0x77, 1) # Register pressure sensor Port I2C-1
 gpsSensor = GPS('/dev/ttyAMA0', 4800) # Connect Serial to GPS Device
 lcdDisplay = LCD() # Create a reference to the LCD Display
